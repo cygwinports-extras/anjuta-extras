@@ -1,0 +1,12 @@
+--- origsrc/anjuta-extras-2.28.0/configure.ac	2009-09-22 04:02:04.000000000 -0500
++++ src/anjuta-extras-2.28.0/configure.ac	2009-11-05 04:42:41.742890600 -0600
+@@ -237,6 +237,9 @@ AC_SUBST(anjuta_image_dir)
+ EXTRA_CFLAGS='-DPACKAGE_PIXMAPS_DIR=\""$(anjuta_image_dir)"\" -DPACKAGE_LIB_DIR=\""$(anjutalibdir)"\" -DPACKAGE_DATA_DIR=\""$(anjuta_data_dir)"\"'
+ AC_SUBST(EXTRA_CFLAGS)
+ 
++ANJUTA_PLUGIN_LDFLAGS='-module -avoid-version -no-undefined'
++AC_SUBST(ANJUTA_PLUGIN_LDFLAGS)
++
+ PKG_CHECK_MODULES(LIBXML, libxml-2.0)
+ AC_OUTPUT([
+ Makefile
