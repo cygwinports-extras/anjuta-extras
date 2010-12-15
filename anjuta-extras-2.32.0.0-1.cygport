@@ -2,5 +2,5 @@ inherit gnome2
 
 HOMEPAGE="http://www.anjuta.org/"
 
-PATCH_URI="2.28-libbfd.patch"
+PATCH_URI="2.32-libbfd.patch"
 

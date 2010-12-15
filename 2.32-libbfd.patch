@@ -1,0 +1,14 @@
+--- origsrc/anjuta-extras-2.32.0.0/configure.ac	2010-09-28 11:06:38.000000000 -0500
++++ src/anjuta-extras-2.32.0.0/configure.ac	2010-12-14 23:58:59.862555600 -0600
+@@ -127,9 +127,9 @@ else
+ 	valgrind="yes"
+ fi
+ 
+-AC_CHECK_LIB(bfd, bfd_get_error, [PLUGIN_VALGRIND_LIBS="-Wl,-Bstatic -lbfd -liberty -Wl,-Bdynamic -lz -ldl"],
++AC_CHECK_LIB(bfd, bfd_get_error, [PLUGIN_VALGRIND_LIBS="-Wl,-Bstatic,-lbfd,-liberty,-Bdynamic,-lz,-ldl,\$(INTLLIBS)"],
+    valgrind="no",
+-  [-liberty -lz -ldl])
++  [-liberty -lz -ldl $INTLLIBS])
+ 
+ AC_SUBST(PLUGIN_VALGRIND_LIBS)
+ AM_CONDITIONAL(HAVE_PLUGIN_VALGRIND, [test x$valgrind = xyes])
