@@ -1,7 +1,0 @@
-Not yet ported to GTK3, but we don't have scratchbox anyway.
-
---- origsrc/anjuta-extras-3.1.2/plugins/Makefile.am	2011-06-05 20:55:48.000000000 -0500
-+++ src/anjuta-extras-3.1.2/plugins/Makefile.am	2011-06-27 04:53:07.071148200 -0500
-@@ -1 +1 @@
--SUBDIRS = sample1 scintilla scratchbox
-+SUBDIRS = sample1 scintilla
