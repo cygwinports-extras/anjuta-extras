@@ -1,3 +1,5 @@
 inherit gnome2
 
 HOMEPAGE="http://www.anjuta.org/"
+
+KEEP_LA_FILES="none"
