@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="anjuta-extras"
-VERSION=3.6.0
+VERSION=3.8.0
 RELEASE=1
-CATEGORY="Devel GNOME"
+CATEGORY="Devel"
 SUMMARY="GNOME C/C++ IDE (additional plugins)"
 DESCRIPTION="Anjuta is a versatile Integrated Development Environment (IDE) for
 C and C++ on GNU/Linux. It has been written for GTK/GNOME and features a number
