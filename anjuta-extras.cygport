@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="anjuta-extras"
-VERSION=3.10.0
+VERSION=3.26.0
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNOME C/C++ IDE (additional plugins)"
